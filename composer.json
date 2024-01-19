@@ -1,5 +1,5 @@
 {
-  "name": "gauthier/doctrine-multilingual-string",
+  "name": "keym-music/doctrine-multilingual-string",
   "type": "plugin",
   "require-dev": {
     "codeception/codeception": "^4.0",
@@ -13,7 +13,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Gauthier\\MultilingualString\\": "src/"
+      "Keym\\MultilingualString\\": "src/"
     }
   },
   "require": {
