@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Gauthier\MultilingualString\Type;
+namespace Keym\MultilingualString\Type;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\ConversionException;
 use Doctrine\DBAL\Types\JsonType;
-use Gauthier\MultilingualString\MultilingualString;
+use Keym\MultilingualString\MultilingualString;
 
 class MultilingualStringType extends JsonType
 {

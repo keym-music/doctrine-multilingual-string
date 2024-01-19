@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Gauthier\MultilingualString;
+namespace Keym\MultilingualString;
 
 
 class MultilingualStringException extends \Exception

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Gauthier\MultilingualString;
+namespace Keym\MultilingualString;
 
 
 /**
  * Class MultilingualString
- * @package Gauthier\MultilingualString
+ * @package Keym\MultilingualString
  */
 class MultilingualString
 {

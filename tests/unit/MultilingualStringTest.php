@@ -1,7 +1,7 @@
 <?php
 
 use Codeception\Test\Unit;
-use Gauthier\MultilingualString\MultilingualString;
+use Keym\MultilingualString\MultilingualString;
 
 class MultilingualStringTest extends Unit
 {
