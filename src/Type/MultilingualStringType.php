@@ -19,20 +19,20 @@ class MultilingualStringType extends JsonType
     /**
      * @param $value
      * @param AbstractPlatform $platform
-     * @return false|mixed|string|null
-     * @throws \Doctrine\DBAL\Types\ConversionException
+     * @return string|null
+     * @throws ConversionException
      */
-    public function convertToDatabaseValue($value, AbstractPlatform $platform)
+    public function convertToDatabaseValue($value, AbstractPlatform $platform): ?string
     {
         $translations = array_filter($value->extract());
 
         return parent::convertToDatabaseValue($translations, $platform);
     }
 
-    public function convertToPHPValue($value, AbstractPlatform $platform) : mixed
+    public function convertToPHPValue($value, AbstractPlatform $platform) : MultilingualString
     {
+        if(!$value) $value = "[]";
 
-        if(!$value) $value = [];
         $value = new MultilingualString(json_decode($value, true));
 
         if (json_last_error() !== JSON_ERROR_NONE) {
